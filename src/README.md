@@ -1,0 +1,1 @@
+DBeaver template folder
