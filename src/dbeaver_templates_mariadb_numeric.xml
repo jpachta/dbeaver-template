@@ -177,7 +177,7 @@ The inverse of this function is EXP()."
   context="sql_mysql_mariaDB" 
   deleted="false" 
   description="If called with one parameter, this function returns the natural logarithm of X. If X is less than or equal to 0, then NULL is returned.
-If called with two parameters, it returns the logarithm of X to the base B. If B is <= 1 or X <= 0, the function returns NULL.
+If called with two parameters, it returns the logarithm of X to the base B. If B is less or equal 1 or X less or equal 0, the function returns NULL.
 If any argument is NULL, the function returns NULL.
 The inverse of this function (when called with a single argument) is the EXP() function." 
   enabled="true" 
@@ -253,7 +253,7 @@ The integer part of a division can be obtained using DIV."
   autoinsert="true" 
   context="sql_mysql_mariaDB" 
   deleted="false" 
-  description="Returns a random DOUBLE precision floating point value v in the range 0 <= v < 1.0. If a constant integer argument N is specified, it is used as the seed value, which produces a repeatable sequence of column values. In the example below, note that the sequences of values produced by RAND(3) is the same both places where it occurs.
+  description="Returns a random DOUBLE precision floating point value v in the range 0 less or equal v less 1.0. If a constant integer argument N is specified, it is used as the seed value, which produces a repeatable sequence of column values. In the example below, note that the sequences of values produced by RAND(3) is the same both places where it occurs.
 In a WHERE clause, RAND() is evaluated each time the WHERE is executed.
 Statements using the RAND() function are not safe for statement-based replication." 
   enabled="true" 
