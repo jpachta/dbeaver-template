@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates url="https://mariadb.com/kb/en/numeric-functions/" family="Numeric Functions">
+
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Addition. If both operands are integers, the result is calculated with BIGINT precision. If either integer is unsigned, the result is also an unsigned integer." 
+  enabled="true" 
+  name="+">+
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Subtraction. The operator is also used as the unary minus for changing sign.
+If both operands are integers, the result is calculated with BIGINT precision. If either integer is unsigned, the result is also an unsigned integer, unless the NO_UNSIGNED_SUBTRACTION SQL_MODE is enabled, in which case the result is always signed.
+For real or string operands, the operand with the highest precision determines the result precision." 
+  enabled="true" 
+  name="-">-
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Division operator. Dividing by zero will return NULL. By default, returns four digits after the decimal. This is determined by the server system variable div_precision_increment which by default is four. It can be set from 0 to 30.
+Dividing by zero returns NULL. If the ERROR_ON_DIVISION_BY_ZERO SQL_MODE is used (the default since MariaDB 10.2.4), a division by zero also produces a warning." 
+  enabled="true" 
+  name="/">/
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Multiplication operator." 
+  enabled="true" 
+  name="*">*
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Modulo operator. Returns the remainder of N divided by M. See also MOD." 
+  enabled="true" 
+  name="%">${N} % ${M}
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Integer division. Similar to FLOOR(), but is safe with BIGINT values. Incorrect results may occur for non-integer operands that exceed BIGINT range.
+If the ERROR_ON_DIVISION_BY_ZERO SQL_MODE is used, a division by zero produces an error. Otherwise, it returns NULL.
+The remainder of a division can be obtained using the MOD operator." 
+  enabled="true" 
+  name="DIV">DIV
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the absolute (non-negative) value of X. If X is not a number, it is converted to a numeric type." 
+  enabled="true" 
+  name="ABS">ABS(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the arc cosine of X, that is, the value whose cosine is X. Returns NULL if X is not in the range -1 to 1." 
+  enabled="true" 
+  name="ACOS">ACOS(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the arc sine of X, that is, the value whose sine is X. Returns NULL if X is not in the range -1 to 1." 
+  enabled="true" 
+  name="ASIN">ASIN(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the arc tangent of X, that is, the value whose tangent is X." 
+  enabled="true" 
+  name="ATAN">ATAN(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the arc tangent of the two variables X and Y. It is similar to calculating the arc tangent of Y / X, except that the signs of both arguments are used to determine the quadrant of the result." 
+  enabled="true" 
+  name="ATAN2">ATAN(${X}, ${Y})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the smallest integer value not less than X." 
+  enabled="true" 
+  name="CEILING">CEILING(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Converts numbers between different number bases. Returns a string representation of the number N, converted from base from_base to base to_base.
+Returns NULL if any argument is NULL, or if the second or third argument are not in the allowed range.
+The argument N is interpreted as an integer, but may be specified as an integer or a string. The minimum base is 2 and the maximum base is 36. If to_base is a negative number, N is regarded as a signed number. Otherwise, N is treated as unsigned. CONV() works with 64-bit precision.
+Some shortcuts for this function are also available: BIN(), OCT(), HEX(), UNHEX(). Also, MariaDB allows binary literal values and hexadecimal literal values." 
+  enabled="true" 
+  name="CONV">CONV(${N}, ${from_base}, ${to_base})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the cosine of X, where X is given in radians." 
+  enabled="true" 
+  name="COS">COS(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the cotangent of X." 
+  enabled="true" 
+  name="">COT(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Computes a cyclic redundancy check value and returns a 32-bit unsigned value. The result is NULL if the argument is NULL. The argument is expected to be a string and (if possible) is treated as one if it is not." 
+  enabled="true" 
+  name="CRC32">CRC32(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the argument X, converted from radians to degrees.
+This is the converse of the RADIANS() function." 
+  enabled="true" 
+  name="DEGREES">DEGREES(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the value of e (the base of natural logarithms) raised to the power of X. The inverse of this function is LOG() (using a single argument only) or LN().
+If X is NULL, this function returns NULL." 
+  enabled="true" 
+  name="EXP">EXP(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the largest integer value not greater than X." 
+  enabled="true" 
+  name="FLOOR">FLOOR(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the natural logarithm of X; that is, the base-e logarithm of X. If X is less than or equal to 0, or NULL, then NULL is returned.
+The inverse of this function is EXP()." 
+  enabled="true" 
+  name="LN">LN(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="If called with one parameter, this function returns the natural logarithm of X. If X is less than or equal to 0, then NULL is returned.
+If called with two parameters, it returns the logarithm of X to the base B. If B is <= 1 or X <= 0, the function returns NULL.
+If any argument is NULL, the function returns NULL.
+The inverse of this function (when called with a single argument) is the EXP() function." 
+  enabled="true" 
+  name="LOG">LOG(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the base-10 logarithm of X." 
+  enabled="true" 
+  name="LOG10">LOG10(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the base-2 logarithm of X." 
+  enabled="true" 
+  name="LOG2">LOG2(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="" 
+  enabled="true" 
+  name="">MOD(${N}, ${M}), N % M, N MOD M(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Modulo operation. Returns the remainder of N divided by M. See also Modulo Operator.
+If the ERROR_ON_DIVISION_BY_ZERO SQL_MODE is used, any number modulus zero produces an error. Otherwise, it returns NULL.
+The integer part of a division can be obtained using DIV." 
+  enabled="true" 
+  name="MOD">MOD(N,M)
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a string representation of the octal value of N, where N is a longlong (BIGINT) number. This is equivalent to CONV(N,10,8). Returns NULL if N is NULL." 
+  enabled="true" 
+  name="OCT">OCT(${N})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the value of π (pi). The default number of decimal places displayed is six, but MariaDB uses the full double-precision value internally." 
+  enabled="true" 
+  name="PI">PI()
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the value of X raised to the power of Y. POWER() is a synonym." 
+  enabled="true" 
+  name="POW">POW(${X}, ${Y})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the argument X, converted from degrees to radians. Note that π radians equals 180 degrees. This is the converse of the DEGREES() function." 
+  enabled="true" 
+  name="RADIANS">RADIANS(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a random DOUBLE precision floating point value v in the range 0 <= v < 1.0. If a constant integer argument N is specified, it is used as the seed value, which produces a repeatable sequence of column values. In the example below, note that the sequences of values produced by RAND(3) is the same both places where it occurs.
+In a WHERE clause, RAND() is evaluated each time the WHERE is executed.
+Statements using the RAND() function are not safe for statement-based replication." 
+  enabled="true" 
+  name="RAND">RAND(${N})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Rounds the argument X to D decimal places. The rounding algorithm depends on the data type of X. D defaults to 0 if not specified. D can be negative to cause D digits left of the decimal point of the value X to become zero." 
+  enabled="true" 
+  name="ROUND">ROUND(${X}, ${D})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the sign of the argument as -1, 0, or 1, depending on whether X is negative, zero, or positive." 
+  enabled="true" 
+  name="SIGN">SIGN(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the sine of X, where X is given in radians." 
+  enabled="true" 
+  name="SIN">SIN(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the square root of X. If X is negative, NULL is returned." 
+  enabled="true" 
+  name="SQRT">SQRT(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the tangent of X, where X is given in radians." 
+  enabled="true" 
+  name="TAN">TAN(${X})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the number X, truncated to D decimal places. If D is 0, the result has no decimal point or fractional part. D can be negative to cause D digits left of the decimal point of the value X to become zero." 
+  enabled="true" 
+  name="TRUNCATE">TRUNCATE(${X}, ${D})
+</template>
+
+</templates>

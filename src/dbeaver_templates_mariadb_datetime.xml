@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates url="https://mariadb.com/kb/en/date-time-functions/" family="Date and Time Functions">
+
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="When invoked with the INTERVAL form of the second argument, ADDDATE() is a synonym for DATE_ADD(). The related function SUBDATE() is a synonym for DATE_SUB(). For information on the INTERVAL unit argument, see the discussion for DATE_ADD()." 
+  enabled="true" 
+  name="ADDDATE INTERVAL">ADDDATE(${date}, INTERVAL ${expr} ${unit})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="When invoked with the INTERVAL form of the second argument, ADDDATE() is a synonym for DATE_ADD(). The related function SUBDATE() is a synonym for DATE_SUB(). For information on the INTERVAL unit argument, see the discussion for DATE_ADD()." 
+  enabled="true" 
+  name="ADDDATE">ADDDATE(${expr}, ${days})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="ADDTIME() adds expr2 to expr1 and returns the result. expr1 is a time or datetime expression, and expr2 is a time expression." 
+  enabled="true" 
+  name="ADDTIME">ADDTIME(${expr1}, ${expr2})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="CONVERT_TZ() converts a datetime value dt from the time zone given by from_tz to the time zone given by to_tz and returns the resulting value." 
+  enabled="true" 
+  name="CONVERT_TZ">CONVERT_TZ(${dt}, ${from_tz}, ${to_tz})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the current date as a value in 'YYYY-MM-DD' or YYYYMMDD format, depending on whether the function is used in a string or numeric context." 
+  enabled="true" 
+  name="CURDATE">CURDATE()
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the current date as a value in 'YYYY-MM-DD' or YYYYMMDD format, depending on whether the function is used in a string or numeric context." 
+  enabled="true" 
+  name="CURDATE INTERVAL">CURDATE() - INTERVAL ${N} DAY
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the current time as a value in 'HH:MM:SS' or HHMMSS.uuuuuu format, depending on whether the function is used in a string or numeric context. The value is expressed in the current time zone." 
+  enabled="true" 
+  name="CURTIME">CURTIME(${precision})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Extracts the date part of the date or datetime expression expr." 
+  enabled="true" 
+  name="DATE">DATE(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="DATEDIFF() returns (expr1 – expr2) expressed as a value in days from one date to the other. expr1 and expr2 are date or date-and-time expressions. Only the date parts of the values are used in the calculation." 
+  enabled="true" 
+  name="DATEDIFF">DATEDIFF(${expr1}, ${expr2})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Performs date arithmetic. The date argument specifies the starting date or datetime value. expr is an expression specifying the interval value to be added or subtracted from the starting date. " 
+  enabled="true" 
+  name="DATE_ADD">DATE_ADD(${date}, INTERVAL ${expr} ${unit})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Formats the date value according to the format string. " 
+  enabled="true" 
+  name="DATE_FORMAT">DATE_FORMAT(${date}, ${format}, ${locale})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Performs date arithmetic. The date argument specifies the starting date or datetime value. expr is an expression specifying the interval value to be added or subtracted from the starting date. " 
+  enabled="true" 
+  name="DATE_SUB">DATE_SUB(${date}, INTERVAL ${expr} ${unit})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the name of the weekday for date." 
+  enabled="true" 
+  name="DAYNAME">DAYNAME(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the day of the month for date, in the range 1 to 31, or 0 for dates such as '0000-00-00' or '2008-00-00' which have a zero day part." 
+  enabled="true" 
+  name="DAYOFMONTH">DAYOFMONTH(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the day of the week index for the date (1 = Sunday, 2 = Monday, ..., 7 = Saturday). These index values correspond to the ODBC standard." 
+  enabled="true" 
+  name="DAYOFWEEK">DAYOFWEEK(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the day of the year for date, in the range 1 to 366." 
+  enabled="true" 
+  name="DAYOFYEAR">DAYOFYEAR(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="The EXTRACT() function extracts the required unit from the date. See Date and Time Units for a complete list of permitted units." 
+  enabled="true" 
+  name="EXTRACT">EXTRACT(${unit} FROM ${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Given a day number N, returns a DATE value. The day count is based on the number of days from the start of the standard calendar (0000-00-00). " 
+  enabled="true" 
+  name="FROM_DAYS">FROM_DAYS(${N})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a representation of the unix_timestamp argument as a value in 'YYYY-MM-DD HH:MM:SS' or YYYYMMDDHHMMSS.uuuuuu format, depending on whether the function is used in a string or numeric context. The value is expressed in the current time zone. " 
+  enabled="true" 
+  name="FROM_UNIXTIME">FROM_UNIXTIME(${unix_timestamp})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a representation of the unix_timestamp argument as a value in 'YYYY-MM-DD HH:MM:SS' or YYYYMMDDHHMMSS.uuuuuu format, depending on whether the function is used in a string or numeric context. The value is expressed in the current time zone. " 
+  enabled="true" 
+  name="FROM_UNIXTIME format">FROM_UNIXTIME(${unix_timestamp}, ${format})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a format string. This function is useful in combination with the DATE_FORMAT() and the STR_TO_DATE() functions." 
+  enabled="true" 
+  name="GET_FORMAT">GET_FORMAT(${DATE_DATETIME_TIME}, '${EUR_USA_JIS_ISO_INTERNAL}')
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the hour for time. The range of the return value is 0 to 23 for time-of-day values. However, the range of TIME values actually is much larger, so HOUR can return values greater than 23." 
+  enabled="true" 
+  name="HOUR">HOUR(${time})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Takes a date or datetime value and returns the corresponding value for the last day of the month. Returns NULL if the argument is invalid." 
+  enabled="true" 
+  name="LAST_DAY">LAST_DAY(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a date, given year and day-of-year values. dayofyear must be greater than 0 or the result is NULL." 
+  enabled="true" 
+  name="MAKEDATE">MAKEDATE(${year}, ${dayofyear})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a time value calculated from the hour, minute, and second arguments." 
+  enabled="true" 
+  name="MAKETIME">MAKETIME(${hour}, ${minute}, ${second})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the microseconds from the time or datetime expression expr as a number in the range from 0 to 999999." 
+  enabled="true" 
+  name="MICROSECOND">MICROSECOND(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the minute for time, in the range 0 to 59. " 
+  enabled="true" 
+  name="MINUTE">MINUTE(${time})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the month for date in the range 1 to 12 for January to December, or 0 for dates such as '0000-00-00' or '2008-00-00' that have a zero month part." 
+  enabled="true" 
+  name="MONTH">MONTH(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the full name of the month for date. The language used for the name is controlled by the value of the lc_time_names system variable. See server locale for more on the supported locales." 
+  enabled="true" 
+  name="MONTHNAME">MONTHNAME(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the current date and time as a value in 'YYYY-MM-DD HH:MM:SS' or YYYYMMDDHHMMSS.uuuuuu format, depending on whether the function is used in a string or numeric context. The value is expressed in the current time zone." 
+  enabled="true" 
+  name="NOW">NOW(${precision})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Adds N months to period P. P is in the format YYMM or YYYYMM, and is not a date value. If P contains a two-digit year, values from 00 to 69 are converted to from 2000 to 2069, while values from 70 are converted to 1970 upwards." 
+  enabled="true" 
+  name="PERIOD_ADD">PERIOD_ADD(${P}, ${N)}
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the number of months between periods P1 and P2. P1 and P2 can be in the format YYMM or YYYYMM, and are not date values." 
+  enabled="true" 
+  name="PERIOD_DIFF">PERIOD_DIFF(${P1}, ${P2})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the quarter of the year for date, in the range 1 to 4. Returns 0 if month contains a zero value, or NULL if the given value is not otherwise a valid date (zero values are accepted)." 
+  enabled="true" 
+  name="QUARTER">QUARTER(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the second for a given time (which can include microseconds), in the range 0 to 59, or NULL if not given a valid time value." 
+  enabled="true" 
+  name="SECOND">SECOND(${time})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the seconds argument, converted to hours, minutes, and seconds, as a TIME value. The range of the result is constrained to that of the TIME data type." 
+  enabled="true" 
+  name="SEC_TO_TIME">SEC_TO_TIME(${seconds})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="This is the inverse of the DATE_FORMAT() function. It takes a string str and a format string format. STR_TO_DATE() returns a DATETIME value if the format string contains both date and time parts, or a DATE or TIME value if the string contains only date or time parts." 
+  enabled="true" 
+  name="STR_TO_DATE">STR_TO_DATE(${str}, ${format})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="" 
+  enabled="true" 
+  name="SUBDATE">SUBDATE(${expr}, ${days})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="When invoked with the INTERVAL form of the second argument, SUBDATE() is a synonym for DATE_SUB(). See Date and Time Units for a complete list of permitted units. " 
+  enabled="true" 
+  name="SUBDATE INTERVAL">SUBDATE(${date}, INTERVAL ${expr} ${unit})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="SUBTIME() returns expr1 - expr2 expressed as a value in the same format as expr1. expr1 is a time or datetime expression, and expr2 is a time expression." 
+  enabled="true" 
+  name="SUBTIME">SUBTIME(${expr1}, ${expr2})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the current date and time as a value in 'YYYY-MM-DD HH:MM:SS' or YYYYMMDDHHMMSS.uuuuuu format, depending on whether the function is used in a string or numeric context." 
+  enabled="true" 
+  name="SYSDATE">SYSDATE(${precision})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Extracts the time part of the time or datetime expression expr and returns it as a string." 
+  enabled="true" 
+  name="TIME Function">TIME(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="TIMEDIFF() returns expr1 - expr2 expressed as a time value. expr1 and expr2 are time or date-and-time expressions, but both must be of the same type." 
+  enabled="true" 
+  name="TIMEDIFF">TIMEDIFF(${expr1}, ${expr2})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="With a single argument, this function returns the date or datetime expression expr as a datetime value. With two arguments, it adds the time expression expr2 to the date or datetime expression expr1 and returns the result as a datetime value." 
+  enabled="true" 
+  name="TIMESTAMP FUNCTION">TIMESTAMP(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="With a single argument, this function returns the date or datetime expression expr as a datetime value. With two arguments, it adds the time expression expr2 to the date or datetime expression expr1 and returns the result as a datetime value." 
+  enabled="true" 
+  name="TIMESTAMP FUNCTION 2">TIMESTAMP(${expr1}, ${expr2})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Adds the integer expression interval to the date or datetime expression datetime_expr. The unit for interval is given by the unit argument, which should be one of the following values: MICROSECOND, SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, or YEAR." 
+  enabled="true" 
+  name="TIMESTAMPADD">TIMESTAMPADD(${unit}, ${interval}, ${datetime_expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns datetime_expr2 - datetime_expr1, where datetime_expr1 and datetime_expr2 are date or datetime expressions. One expression may be a date and the other a datetime; a date value is treated as a datetime having the time part '00:00:00' where necessary. " 
+  enabled="true" 
+  name="TIMESTAMPDIFF">TIMESTAMPDIFF(${unit}, ${datetime_expr1}, ${datetime_expr2})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="This is used like the DATE_FORMAT() function, but the format string may contain format specifiers only for hours, minutes, and seconds. Other specifiers produce a NULL value or 0." 
+  enabled="true" 
+  name="TIME_FORMAT">TIME_FORMAT(${time}, ${format})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the time argument, converted to seconds." 
+  enabled="true" 
+  name="TIME_TO_SEC">TIME_TO_SEC(${time})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Given a date date, returns the number of days since the start of the current calendar (0000-00-00)." 
+  enabled="true" 
+  name="TO_DAYS">TO_DAYS(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the number of seconds from year 0 till expr, or NULL if expr is not a valid date or datetime." 
+  enabled="true" 
+  name="TO_SECONDS">TO_SECONDS(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="If called with no argument, returns a Unix timestamp (seconds since '1970-01-01 00:00:00' UTC) as an unsigned integer. " 
+  enabled="true" 
+  name="UNIX_TIMESTAMP">UNIX_TIMESTAMP(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the current UTC date as a value in 'YYYY-MM-DD' or YYYYMMDD format, depending on whether the function is used in a string or numeric context. " 
+  enabled="true" 
+  name="UTC_DATE">UTC_DATE()
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the current UTC time as a value in 'HH:MM:SS' or HHMMSS.uuuuuu format, depending on whether the function is used in a string or numeric context." 
+  enabled="true" 
+  name="UTC_TIME">UTC_TIME(${precision})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the current UTC date and time as a value in 'YYYY-MM-DD HH:MM:SS' or YYYYMMDDHHMMSS.uuuuuu format, depending on whether the function is used in a string or numeric context." 
+  enabled="true" 
+  name="UTC_TIMESTAMP">UTC_TIMESTAMP(${precision})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="This function returns the week number for date. The two-argument form of WEEK() allows you to specify whether the week starts on Sunday or Monday and whether the return value should be in the range from 0 to 53 or from 1 to 53. If the mode argument is omitted, the value of the default_week_format system variable is used." 
+  enabled="true" 
+  name="WEEK">WEEK(${date}, ${mode})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the weekday index for date (0 = Monday, 1 = Tuesday, ... 6 = Sunday)." 
+  enabled="true" 
+  name="WEEKDAY">WEEKDAY(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the calendar week of the date as a number in the range from 1 to 53. WEEKOFYEAR() is a compatibility function that is equivalent to WEEK(date,3)." 
+  enabled="true" 
+  name="WEEKOFYEAR">WEEKOFYEAR(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the year for the given date, in the range 1000 to 9999, or 0 for the 'zero' date." 
+  enabled="true" 
+  name="YEAR">YEAR(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns year and week for a date. The mode argument works exactly like the mode argument to WEEK(). The year in the result may be different from the year in the date argument for the first and the last week of the year." 
+  enabled="true" 
+  name="YEARWEEK">YEARWEEK(${date})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns year and week for a date. The mode argument works exactly like the mode argument to WEEK(). The year in the result may be different from the year in the date argument for the first and the last week of the year." 
+  enabled="true" 
+  name="YEARWEEK mode">YEARWEEK(${date}, ${mode})
+</template>
+
+</templates>

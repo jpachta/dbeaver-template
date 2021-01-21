@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates url="https://mariadb.com/kb/en/string-functions/" family="String Functions">
+
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the numeric ASCII value of the leftmost character of the string argument. Returns 0 if the given string is empty and NULL if it is NULL." 
+  enabled="true" 
+  name="ASCII">ASCII(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a string representation of the binary value of the given longlong (that is, BIGINT) number. This is equivalent to CONV(N,10,2). The argument should be positive. If it is a FLOAT, it will be truncated. Returns NULL if the argument is NULL." 
+  enabled="true" 
+  name="BIN">BIN(${n})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="The BINARY operator casts the string following it to a binary string. " 
+  enabled="true" 
+  name="BINARY">BINARY
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the length of the given string argument in bits." 
+  enabled="true" 
+  name="BIT_LENGTH">BIT_LENGTH(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="The CAST() function takes a value of one type and produces a value of another type, similar to the CONVERT() function. " 
+  enabled="true" 
+  name="CAST">CAST(${expr} AS ${type})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="CHAR() interprets each argument as an INT and returns a string consisting of the characters given by the code values of those integers. " 
+  enabled="true" 
+  name="CHAR">CHAR(${N}, ${N1}, USING ${charset_name})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="CHARACTER_LENGTH() is a synonym for CHAR_LENGTH()." 
+  enabled="true" 
+  name="CHARACTER_LENGTH">CHARACTER_LENGTH(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the length of the given string argument, measured in characters. " 
+  enabled="true" 
+  name="CHAR_LENGTH">CHAR_LENGTH(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="CHR() interprets each argument N as an integer and returns a VARCHAR(1) string consisting of the character given by the code values of the integer." 
+  enabled="true" 
+  name="CHR">CHR(${N})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string that results from concatenating the arguments. May have one or more arguments. " 
+  enabled="true" 
+  name="CONCAT">CONCAT(${str1}, ${strN})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="CONCAT_WS() stands for Concatenate With Separator and is a special form of CONCAT()." 
+  enabled="true" 
+  name="CONCAT_WS">CONCAT_WS('${separator}', ${str1}, ${strN})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="The CONVERT() and CAST() functions take a value of one type and produce a value of another type." 
+  enabled="true" 
+  name="CONVERT">CONVERT(${expr},${type})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="The CONVERT() and CAST() functions take a value of one type and produce a value of another type." 
+  enabled="true" 
+  name="CONVERT USING">CONVERT(${expr} USING ${transcoding_name}))
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Takes a numeric argument and a series of string arguments. " 
+  enabled="true" 
+  name="ELT">ELT(${N}, ${str1}, ${strN})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Takes a minimum of three arguments. Returns a string where each bit in the given bits argument is returned, with the string values given for on and off." 
+  enabled="true" 
+  name="EXPORT_SET">EXPORT_SET(${bits}, ${on}, ${off}, ${separator}, ${number_of_bits})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="The EXTRACTVALUE() function takes two string arguments: a fragment of XML markup and an XPath expression, (also known as a locator). It returns the text (That is, CDDATA), of the first text node which is a child of the element or elements matching the XPath expression. " 
+  enabled="true" 
+  name="EXTRACTVALUE">EXTRACTVALUE( ${xml_frag},  ${xpath_expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the index position of the string or number matching the given pattern. Returns 0 in the event that none of the arguments match the pattern. Raises an Error 1582 if not given at least two arguments." 
+  enabled="true" 
+  name="FIELD">FIELD(${pattern}, ${str1}, ${strN})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the index position where the given pattern occurs in a string list. The first argument is the pattern you want to search for. The second argument is a string containing comma-separated variables. If the second argument is of the SET data-type, the function is optimized to use bit arithmetic." 
+  enabled="true" 
+  name="FIND_IN_SET">FIND_IN_SET(${pattern}, ${strlist})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Formats the given number for display as a string, adding separators to appropriate position and rounding the results to the given decimal position. For instance, it would format 15233.345 to 15,233.35." 
+  enabled="true" 
+  name="FORMAT">FORMAT(${num}, ${decimal_position}, ${locale})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Decodes the given base-64 encode string, returning the result as a binary string. Returns NULL if the given string is NULL or if it's invalid." 
+  enabled="true" 
+  name="FROM_BASE64">FROM_BASE64(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="If N_or_S is a number, returns a string representation of the hexadecimal value of N, where N is a longlong (BIGINT) number. This is equivalent to CONV(N,10,16)." 
+  enabled="true" 
+  name="HEX">HEX(${N_or_S})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str, with the substring beginning at position pos and len characters long replaced by the string newstr. Returns the original string if pos is not within the length of the string. Replaces the rest of the string from position pos if len is not within the length of the rest of the string. " 
+  enabled="true" 
+  name="INSERT Function">INSERT(${str}, ${pos}, ${len}, ${newstr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the position of the first occurrence of substring substr in string str." 
+  enabled="true" 
+  name="INSTR">INSTR(${str}, ${substr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="LCASE() is a synonym for LOWER()." 
+  enabled="true" 
+  name="LCASE">LCASE(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the leftmost len characters from the string str, or NULL if any argument is NULL." 
+  enabled="true" 
+  name="LEFT">LEFT(${str}, ${len})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the length of the string str, measured in bytes. A multi-byte character counts as multiple bytes. " 
+  enabled="true" 
+  name="LENGTH">LENGTH(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="LENGTHB() is a synonym for LENGTH()." 
+  enabled="true" 
+  name="LENGTHB">LENGTHB(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Tests whether expr matches the pattern pat.% matches any number of characters, including zero. _ matches any single character. " 
+  enabled="true" 
+  name="LIKE">${column} ${NOT} LIKE ${pat} ${ESCAPE} '${escape_char}'
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Reads the file and returns the file contents as a string. " 
+  enabled="true" 
+  name="LOAD_FILE">LOAD_FILE(${file_name})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="The first syntax returns the position of the first occurrence of substring substr in string str. " 
+  enabled="true" 
+  name="LOCATE">LOCATE(${substr}, ${str}, ${pos})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str with all characters changed to lowercase according to the current character set mapping. The default is latin1 (cp1252 West European)." 
+  enabled="true" 
+  name="LOWER">LOWER(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str, left-padded with the string padstr to a length of len characters. If str is longer than len, the return value is shortened to len characters. If padstr is omitted, the LPAD function pads spaces." 
+  enabled="true" 
+  name="LPAD">LPAD(${str}, ${len}, ${padstr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str with leading space characters removed." 
+  enabled="true" 
+  name="LTRIM">LTRIM(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a set value (a string containing substrings separated by ',' characters) consisting of the strings that have the corresponding bit in bits set. str1 corresponds to bit 0, str2 to bit 1, and so on. NULL values in str1, str2, ... are not appended to the result." 
+  enabled="true" 
+  name="MAKE_SET">MAKE_SET(${bits}, ${str1}, ${strN}})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="A special construct used to perform a fulltext search on a fulltext index." 
+  enabled="true" 
+  name="MATCH">MATCH (${col1}, ${colN}) AGAINST (${exp}r ${search_modifier})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="MID(str,pos,len) is a synonym for SUBSTRING(str,pos,len)." 
+  enabled="true" 
+  name="MID">MID(${str}, ${pos}, ${len})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="This is the same as NOT (expr LIKE pat [ESCAPE 'escape_char'])." 
+  enabled="true" 
+  name="NOT LIKE">${expr} NOT LIKE ${pat} ${ESCAPE} ${'escape_char'}
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="This is the same as NOT (expr REGEXP pat)." 
+  enabled="true" 
+  name="NOT REGEXP">${expr} NOT REGEXP ${pat}, ${expr} NOT RLIKE ${pat}
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="OCTET_LENGTH() is normally a synonym for LENGTH(). " 
+  enabled="true" 
+  name="OCTET_LENGTH">OCTET_LENGTH(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="If the leftmost character of the string str is a multi-byte character, returns the code for that character, calculated from the numeric values of its constituent bytes" 
+  enabled="true" 
+  name="ORD">ORD(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="POSITION(substr IN str) is a synonym for LOCATE(substr,str)." 
+  enabled="true" 
+  name="POSITION">POSITION(${substr} IN ${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Quotes a string to produce a result that can be used as a properly escaped data value in an SQL statement. " 
+  enabled="true" 
+  name="QUOTE">QUOTE(${str})
+</template>
+
+
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a string consisting of the string str repeated count times. If count is less than 1, returns an empty string. Returns NULL if str or count are NULL." 
+  enabled="true" 
+  name="REPEAT">REPEAT(${str}, ${count})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str with all occurrences of the string from_str replaced by the string to_str. REPLACE() performs a case-sensitive match when searching for from_str." 
+  enabled="true" 
+  name="REPLACE">REPLACE(${str}, ${from_str}, ${to_str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str with the order of the characters reversed." 
+  enabled="true" 
+  name="REVERSE">REVERSE(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the rightmost len characters from the string str, or NULL if any argument is NULL." 
+  enabled="true" 
+  name="RIGHT">RIGHT(${str}, ${len})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str, right-padded with the string padstr to a length of len characters. If str is longer than len, the return value is shortened to len characters. If padstr is omitted, the RPAD function pads spaces." 
+  enabled="true" 
+  name="RPAD">RPAD(${str}, ${len}, ${padstr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str with trailing space characters removed." 
+  enabled="true" 
+  name="RTRIM">RTRIM(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a soundex string from str. Two strings that sound almost the same should have identical soundex strings. A standard soundex string is four characters long, but the SOUNDEX() function returns an arbitrarily long string. You can use SUBSTRING() on the result to get a standard soundex string. All non-alphabetic characters in str are ignored. All international alphabetic characters outside the A-Z range are treated as vowels." 
+  enabled="true" 
+  name="SOUNDEX">SOUNDEX(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="This is the same as SOUNDEX(expr1) = SOUNDEX(expr2)." 
+  enabled="true" 
+  name="SOUNDS LIKE">${expr1} SOUNDS LIKE ${expr2}
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a string consisting of N space characters. If N is NULL, returns NULL." 
+  enabled="true" 
+  name="SPACE">SPACE(${N})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="STRCMP() returns 0 if the strings are the same, -1 if the first argument is smaller than the second according to the current sort order, and 1 otherwise." 
+  enabled="true" 
+  name="STRCMP">STRCMP(${expr1}, ${expr2})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="The forms without a len argument return a substring from string str starting at position pos." 
+  enabled="true" 
+  name="SUBSTRING">SUBSTRING(${str}, ${pos}, ${len})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the substring from string str before count occurrences of the delimiter delim. If count is positive, everything to the left of the final delimiter (counting from the left) is returned. If count is negative, everything to the right of the final delimiter (counting from the right) is returned. " 
+  enabled="true" 
+  name="SUBSTRING_INDEX">SUBSTRING_INDEX(${str}, ${delim}, ${count})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Converts the string argument str to its base-64 encoded form, returning the result as a character string in the connection character set and collation." 
+  enabled="true" 
+  name="TO_BASE64">TO_BASE64(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str with all remstr prefixes or suffixes removed. If none of the specifiers BOTH, LEADING, or TRAILING is given, BOTH is assumed." 
+  enabled="true" 
+  name="TRIM">TRIM(${BOTH_LEADING_TRAILING} ${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="UCASE() is a synonym for UPPER()." 
+  enabled="true" 
+  name="UCASE">UCASE(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Performs the inverse operation of HEX(str). That is, it interprets each pair of hexadecimal digits in the argument as a number and converts it to the character represented by the number. The resulting characters are returned as a binary string." 
+  enabled="true" 
+  name="UNHEX">UNHEX(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="This function replaces a single portion of a given fragment of XML markup xml_target with a new XML fragment new_xml, and then returns the changed XML. " 
+  enabled="true" 
+  name="UpdateXML">UpdateXML(${xml_target}, ${xpath_expr}, ${new_xml})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the string str with all characters changed to uppercase according to the current character set mapping. The default is latin1 (cp1252 West European)." 
+  enabled="true" 
+  name="UPPER">UPPER(${str})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a binary string representing the string's sorting and comparison value. A string with a lower result means that for sorting purposes the string appears before a string with a higher result." 
+  enabled="true" 
+  name="WEIGHT_STRING">WEIGHT_STRING(${str} AS ${CHAR_BINARY}(${N}))
+</template>
+
+</templates>

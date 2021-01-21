@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates url="https://mariadb.com/kb/en/aggregate-functions/" family="Aggregate Functions">
+
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the average value of expr. The DISTINCT option can be used to return the average of the distinct values of expr. NULL values are ignored. It is an aggregate function, and so can be used with the GROUP BY clause." 
+  enabled="true" 
+  name="AVG">AVG(${DISTINCT} ${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the bitwise AND of all bits in expr. The calculation is performed with 64-bit (BIGINT) precision. It is an aggregate function, and so can be used with the GROUP BY clause." 
+  enabled="true" 
+  name="BIT_AND">BIT_AND(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the bitwise OR of all bits in expr. The calculation is performed with 64-bit (BIGINT) precision. It is an aggregate function, and so can be used with the GROUP BY clause." 
+  enabled="true" 
+  name="BIT_OR">BIT_OR(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the bitwise XOR of all bits in expr. The calculation is performed with 64-bit (BIGINT) precision. It is an aggregate function, and so can be used with the GROUP BY clause." 
+  enabled="true" 
+  name="BIT_XOR">BIT_XOR(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a count of the number of non-NULL values of expr in the rows retrieved by a SELECT statement. The result is a BIGINT value. It is an aggregate function, and so can be used with the GROUP BY clause." 
+  enabled="true" 
+  name="COUNT">COUNT(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns a count of the number of different non-NULL values.COUNT(DISTINCT) returns 0 if there were no matching rows." 
+  enabled="true" 
+  name="COUNT DISTINCT">COUNT(DISTINCT ${expr}, ${exprN})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="This function returns a string result with the concatenated non-NULL values from a group. It returns NULL if there are no non-NULL values." 
+  enabled="true" 
+  name="GROUP_CONCAT">GROUP_CONCAT(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the largest, or maximum, value of expr. MAX() can also take a string argument in which case it returns the maximum string value. The DISTINCT keyword can be used to find the maximum of the distinct values of expr, however, this produces the same result as omitting DISTINCT." 
+  enabled="true" 
+  name="MAX">MAX(${DISTINCT} ${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the minimum value of expr. MIN() may take a string argument, in which case it returns the minimum string value. The DISTINCT keyword can be used to find the minimum of the distinct values of expr, however, this produces the same result as omitting DISTINCT." 
+  enabled="true" 
+  name="MIN">MIN(${DISTINCT} ${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the population standard deviation of expr. This is an extension to standard SQL. The standard SQL function STDDEV_POP() can be used instead. " 
+  enabled="true" 
+  name="STD">STD(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the population standard deviation of expr. This function is provided for compatibility with Oracle. The standard SQL function STDDEV_POP() can be used instead." 
+  enabled="true" 
+  name="STDDEV">STDDEV(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the population standard deviation of expr (the square root of VAR_POP()). You can also use STD() or STDDEV(), which are equivalent but not standard SQL." 
+  enabled="true" 
+  name="STDDEV_POP">STDDEV_POP(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the sample standard deviation of expr (the square root of VAR_SAMP())." 
+  enabled="true" 
+  name="STDDEV_SAMP">STDDEV_SAMP(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the sum of expr. If the return set has no rows, SUM() returns NULL. The DISTINCT keyword can be used to sum only the distinct values of expr." 
+  enabled="true" 
+  name="SUM">SUM(${DISTINCT} ${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the population standard variance of expr. This is an extension to standard SQL. The standard SQL function VAR_POP() can be used instead." 
+  enabled="true" 
+  name="VARIANCE">VARIANCE(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the population standard variance of expr. It considers rows as the whole population, not as a sample, so it has the number of rows as the denominator. You can also use VARIANCE(), which is equivalent but is not standard SQL." 
+  enabled="true" 
+  name="VAR_POP">VAR_POP(${expr})
+</template>
+<template 
+  autoinsert="true" 
+  context="sql_mysql_mariaDB" 
+  deleted="false" 
+  description="Returns the sample variance of expr. That is, the denominator is the number of rows minus one." 
+  enabled="true" 
+  name="VAR_SAMP">VAR_SAMP(${expr})
+</template>
+
+</templates>
