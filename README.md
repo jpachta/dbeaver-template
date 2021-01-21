@@ -11,7 +11,7 @@ List of functions with their parameters and description is taken from
 Guide how to create a [DBeaver Documentation SQL Templates](https://dbeaver.com/docs/wiki/SQL-Templates/)
 
 ## Installation
-- Download the .xml file(s) from this repository
+- Download the `src/*.xml` file(s) from this repository
 - Open the DBeaver
   - Navigate to menu `Window > Preferences`
   - Navigate to section `Editors > SQL Editor > Templates`
