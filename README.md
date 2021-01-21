@@ -19,7 +19,7 @@ Guide how to create a [DBeaver Documentation SQL Templates](https://dbeaver.com/
     - select all templates in the window and click on button `Export`
   - Click on button `Import` and upload `.xml` files
 
-That's it. Now are templates ready to use.
+That's it. Now the templates are ready to use.
 
 ### Treating duplicates
 If you find any duplicate items in the list of Templates feel free to disable them 
